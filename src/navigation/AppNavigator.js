@@ -17,6 +17,7 @@ import CreatePostScreen from '../screens/CreatePostScreen';
 import CommentsScreen from '../screens/CommentsScreen';
 import SearchScreen from '../screens/SearchScreen';
 import EditProfileScreen from '../screens/EditProfileScreen';
+import MessagesScreen from '../screens/MessagesScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -86,7 +87,12 @@ export default function AppNavigator() {
           component={EditProfileScreen}
           options={{ headerShown: false }}
         />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <Stack.Screen
+        name="Messages"
+        component={MessagesScreen}
+        options={{ headerShown: false }}
+        />
+        </Stack.Navigator>
+        </NavigationContainer>
   );
 }

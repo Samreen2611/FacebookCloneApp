@@ -49,9 +49,9 @@ export default function HomeScreen({ navigation }) {
           <TouchableOpacity style={styles.iconBtn} onPress={() => navigation.navigate('Search')}>
             <Ionicons name="search" size={22} color="#1C1E21" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.iconBtn}>
+          <TouchableOpacity style={styles.iconBtn} onPress={() => navigation.navigate('Messages')}>
             <Ionicons name="chatbubble-ellipses" size={22} color="#1C1E21" />
-          </TouchableOpacity>
+            </TouchableOpacity>
         </View>
       </View>
 
